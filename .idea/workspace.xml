@@ -1,20 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="08dd44ba-7e7c-4b20-8423-0eff2a90cc37" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Android/assets/data" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Desktop/src/com/badlogic/gdxdemo/DesktopStarter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Main/src/com/badlogic/gdxdemo/GdxDemo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Android/src/com/badlogic/gdxdemo/GdxDemoAndroidStarter.java" afterPath="$PROJECT_DIR$/Android/src/com/badlogic/gdxdemo/GdxDemoAndroidStarter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="08dd44ba-7e7c-4b20-8423-0eff2a90cc37" name="Default" comment="" />
     <ignored path="gdxdemo.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="08dd44ba-7e7c-4b20-8423-0eff2a90cc37" time="1368824426114" ignored="false" />
     <file path="/GdxDemo.java" changelist="08dd44ba-7e7c-4b20-8423-0eff2a90cc37" time="1368824771656" ignored="false" />
     <file path="/DesktopStarter.java" changelist="08dd44ba-7e7c-4b20-8423-0eff2a90cc37" time="1368824899135" ignored="false" />
     <file path="/GdxDemoAndroidStarter.java" changelist="08dd44ba-7e7c-4b20-8423-0eff2a90cc37" time="1368825045578" ignored="false" />
+    <file path="/fragment.java" changelist="08dd44ba-7e7c-4b20-8423-0eff2a90cc37" time="1368825934023" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -264,18 +258,20 @@
     <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Main/libs" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.DesktopStarter">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
@@ -382,7 +378,25 @@
       <patterns />
       <method />
     </configuration>
-    <list size="0" />
+    <configuration default="false" name="DesktopStarter" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.badlogic.gdxdemo.DesktopStarter" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/Main" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Desktop" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Application.DesktopStarter" />
+    </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
@@ -416,7 +430,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="11" y="27" width="1590" height="874" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
