@@ -15,8 +15,8 @@ public class DesktopStarter {
         LwjglApplicationConfiguration cfg = new LwjglApplicationConfiguration();
         cfg.title = "GdxDemo";
         cfg.useGL20 = true;
-        cfg.width = 800;
-        cfg.height = 480;
+        cfg.width = GdxDemo.APP_WIDTH;
+        cfg.height = GdxDemo.APP_HEIGHT;
         new LwjglApplication(new GdxDemo(), cfg);
     }
 }
