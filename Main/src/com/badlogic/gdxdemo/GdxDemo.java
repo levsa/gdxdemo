@@ -34,8 +34,9 @@ public class GdxDemo extends Game {
     Vector3 touchPosition = new Vector3();
     Array<Rectangle> raindrops = new Array<Rectangle>();
     long lastRaindropTimeInNs;
+    private Rectangle bucket;
 
-    @Override
+   @Override
     public void create() {
         loadAssets();
         rainMusic.setLooping(true);
@@ -43,15 +44,15 @@ public class GdxDemo extends Game {
         spriteBatch = new SpriteBatch();
         spawnRaindrop();
         camera.setToOrtho(false, APP_WIDTH, APP_HEIGHT);
+        bucket = new Rectangle();
+      bucket.x = APP_WIDTH / 2 - BUCKET_WIDTH / 2;
+      bucket.y = 20;
+      bucket.width = BUCKET_WIDTH;
+      bucket.height = BUCKET_HEIGHT;
     }
 
     @Override
     public void render() {
-        Rectangle bucket = new Rectangle();
-        bucket.x = APP_WIDTH / 2 - BUCKET_WIDTH / 2;
-        bucket.y = 20;
-        bucket.width = BUCKET_WIDTH;
-        bucket.height = BUCKET_HEIGHT;
         Gdx.gl.glClearColor(0, 0, 0.2f, 1);
         Gdx.gl.glClear(GL10.GL_COLOR_BUFFER_BIT);
 
@@ -64,11 +65,11 @@ public class GdxDemo extends Game {
         }
         spriteBatch.end();
 
-//        if (Gdx.input.isTouched()) {
-//            touchPosition.set(Gdx.input.getX(), Gdx.input.getY(), 0);
-//            camera.unproject(touchPosition);
-//            bucket.x = touchPosition.x - BUCKET_WIDTH / 2;
-//        }
+        if (Gdx.input.isTouched()) {
+            touchPosition.set(Gdx.input.getX(), Gdx.input.getY(), 0);
+            camera.unproject(touchPosition);
+            bucket.x = touchPosition.x - BUCKET_WIDTH / 2;
+        }
 
         Iterator<Rectangle> iterator = raindrops.iterator();
         while (iterator.hasNext()) {
@@ -85,10 +86,10 @@ public class GdxDemo extends Game {
     }
 
     private void handleInput(Rectangle bucket) {
-        if (Gdx.input.isKeyPressed(Input.Keys.O)) {
+        if (Gdx.input.isKeyPressed(Input.Keys.LEFT)) {
             bucket.x -= 10;//200 * Gdx.graphics.getDeltaTime();
         }
-        if (Gdx.input.isKeyPressed(Input.Keys.P)) {
+        if (Gdx.input.isKeyPressed(Input.Keys.RIGHT)) {
             bucket.x += 10;//200 * Gdx.graphics.getDeltaTime();
         }
         if (bucket.x < 0) {
